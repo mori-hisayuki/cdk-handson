@@ -25,14 +25,17 @@
   ],
   "remoteUser": "vscode",
   "features": {
+    //https://containers.dev/features
     // AWS CLI (aws-cli)
-    // https://github.com/devcontainers/features/tree/main/src/aws-cli
     "ghcr.io/devcontainers/features/aws-cli:1": {
       "version": "latest"
     },
+    // AWS Cloud Development Kit (AWS CDK) (via npm)
+    "ghcr.io/devcontainers-contrib/features/aws-cdk:2": {
+      "version": "latest"
+    },
     // Docker (Docker-in-Docker)
-    // https://github.com/devcontainers/features/tree/main/src/docker-in-docker
-    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+    "ghcr.io/devcontainers/features/docker-outside-of-docker:1": {
       "version": "latest",
       "dockerDashComposeVersion": "v2"
     }

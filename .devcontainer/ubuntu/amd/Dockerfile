@@ -74,9 +74,6 @@ RUN set -x \
 # install yarn
 RUN npm install -g yarn
 
-RUN yarn global add \
-    aws-cdk
-
 USER ${USER_NAME}
 
 # create workingirectory
